@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital,wght@0,100;0,300;1,100&family=Work+Sans:wght@100&display=swap');
+
+/* ------------------------------------------Gestion CSS header----------------------------------*/
+header {
+    display: flex; /* Aligne les élements du header sur la même ligne*/
+    justify-content: space-around; /*définit un espace entre les éléments et le header*/
+    position: fixed; /*Fixe la header et la barre de navigation pour le scroll*/
+    width: 100%;
+}
+
+header div {
+    display: flex; /* Aligne les élements de la div sur la même ligne*/
+    justify-content: space-around;
+    background-color: white;
+}
+
+header div img {
+    width: 20rem;
+}
+
+header div nav {
+    display: flex;
+}
+
+.menu>ul {
+    list-style: none;
+    display: flex;
+    right: 0px;
+    padding-top: 5px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+    color: grey;
+    font-size: 15x;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 30px;
+}
+
+.menu ul li:hover>a { 
+    color: cyan; /*Changement de couleur au survol de la sourie*/
+}
+
+.sousmenu {
+    list-style: none;/*Désactiver les puces*/
+    display: none;/*cacher le sous menu*/
+    width: max-content; /*occuper la taille max*/
+    background-color: white;
+}
+
+.has-sous-menu:hover .sousmenu {
+    display: block;/*bloquer le sous menu*/
+}
+
+/* ------------------------------------------Fin Gestion CSS header----------------------------------*/
+/* Debut main*/
+.imageLogo {
+    display: flex;
+    justify-content: space-around;
+}
+.imageLogoimg {
+    display: flex;
+    padding: 25% 50% 5px 50;
+}
+.healthcare-01 {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+.healthcarep {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightseagreen;
+    text-align: center;
+    font-size: 30px;
+}
+.firstParagraphe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+}
+.p1 {
+    display: flex;
+    width: 70rem;
+    height: 10rem;
+    padding: 10px 0 10px 0;
+    justify-content: left;
+    padding-left: 15%;
+}
+.fp1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+    word-spacing: 1px;
+    font-size: 15px;
+    padding-left: 15px;
+    display: flex;
+}
+.p2 {
+    display: flex;
+    width: 70rem;
+    height: 10rem;
+    padding: 10px 0 10px 0;
+    justify-content: right;
+    padding-right: 15%;
+}
+.fp2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+    word-spacing: 1px;
+    font-size: 15px;
+    padding-right: 15px;
+    text-align: left;
+    display: flex;
+}
+/*---------------------------------------------------------------------*/
+.section02 {
+    display: flex;
+    margin-top: 5%;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-between;
+    height: 30rem;
+    align-self: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.blocpatients {
+    width: 30rem;
+    height: 30rem;
+    background-color: #0dd4bd;
+    border-radius: 5px;
+    left: 10px;
+    padding: 10px 0 10px, 20%;
+    justify-content: left;
+}
+.blocpatients img {
+    color: white;
+    padding: 30px 0 0 30px;
+    font-size: xx-large;
+}
+.blocpatients h4 {
+    color: white;
+    padding: 10px 0 0 30px;
+    font-size: 35px;
+}
+.blocpatients p {
+    color: white;
+    padding: 10px 0 0 30px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 30rem;
+}
+.ForPatients {
+    text-decoration: solid;
+    text-decoration-line: underline;
+    background-color: #0dd4bd;
+    color: white;
+    padding: 10px 0 0 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: #0dd4bd;
+    padding-bottom: 0;
+}
+/*---------------------Gestion doctors-------------------------------------------------------------------*/
+.blocdoctors {
+    width: 30rem;
+    height: 30rem;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    padding: 10px 0 10px, 10px;
+    justify-content: center;
+}
+.blocdoctors img {
+    color: white;
+    padding: 30px 0 0 30px;
+    font-size: large;
+}
+.blocdoctors h4 {
+    color: white;
+    padding: 0 0 0 30px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blocdoctors p {
+    color: white;
+    padding: 0px 10px 0 30px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+.ForDoctors {
+    text-decoration: solid;
+    text-decoration-line: underline;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 0 0 30px;
+    bottom: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: dodgerblue;
+}
+/*---------------------Gestion Clinic-------------------------------------------------------------------*/
+.blocclinic {
+    width: 30rem;
+    height: 30rem;
+    background-color: darkslategrey;
+    border-radius: 5px;
+    padding: 10px 10px 10px 0;
+    right: 0;
+}
+.blocclinic img {
+    color: white;
+    padding: 30px 0 0 30px;
+    font-size: large;
+}
+.blocclinic h4 {
+    color: white;
+    padding: 0 0 0 30px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blocclinic p {
+    color: white;
+    padding: 0px 10px 0 30px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+.ForClinic {
+    text-decoration: solid;
+    text-decoration-line: underline;
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px 0 0 30px;
+    bottom: 0px;
+    top: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: darkslategrey;
+}
+.ForClinic2 {
+    text-decoration: solid;
+    text-decoration-line: underline;
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px 0 0 30px;
+    bottom: 0px;
+    top: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: darkslategrey;
+}
+/*---------------------------------------------------*/
+.Section03 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+.Section03 div {
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 30%;
+    padding-left: 5%;
+}
+.Section03 p {
+    color: aquamarine;
+    width: 25%;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgTest {
+    width: 20%;
+    height: 5%;
+    padding: 5px 5px 5px 5px;
+}
+.imgTest02 {
+    width: 20%;
+    height: 15%;
+    padding: 5px 5px 5px 5px;
+}
+/*section 4 */
+.healthcareplatform {
+    display: flex;
+    background-color: aquamarine;
+    margin-top: 5%;
+    padding-top: 5px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+/*.healthcareplatform01 {
+    /*display: flex;
+    margin-left: 10%;
+    width: 80rem;
+    height: 80rem;
+    align-items: flex-start;
+}*/
+#healthcareplatformh5 {
+    font-size: 30px;
+    width: 50rem;
+    font-family: 'Roboto', sans-serif;
+    color: #747474;
+    padding-left: 30%;
+}
+
+#healthcareplatformp {
+    font-size: 15px;
+    width: 50rem;
+    font-family: 'Roboto', sans-serif;
+    color: #747474;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+#healthcareplatformimg {
+    width: 100%;
+    bottom: 0;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+.healthcareplatform02 {
+    display: flex;
+    margin-right: 15%;
+}
+.flagwebsites {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;*/
+}
+.visitsdoctor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    flex-direction: column;*/
+}
+/* 1er sous bloc*/
+.section04Div0201 {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: column;
+    margin: 5% 0 0 15%;
+}
+#flag {
+    padding: 5px 15px 5px 15px;
+}
+#leader {
+    text-align: center;
+    color: #0dd4bd;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+#pays {
+    padding-top: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+/* 3eme sous bloc*/
+.section04Div0203 {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    ;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: column;
+    margin: 5% 0 15% 15%;
+}
+#patient {
+    padding: 5px 15px 5px 15px;
+}
+#patients {
+    text-align: center;
+    color: #0dd4bd;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+#websites {
+    padding-top: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+/* 2eme sous bloc*/
+.section04Div0202 {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    ;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: column;
+    margin: 25% 25% 0 0;
+    /*padding-bottom: 10%;*/
+}
+#visits {
+    padding: 5px 15px 5px 15px;
+}
+#appointments {
+    text-align: center;
+    color: #0dd4bd;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+#booked {
+    padding-top: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+/* 4eme sous bloc*/
+.section04Div0204 {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    border-radius: 5px;
+    ;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    flex-direction: column;
+    margin: 5% 20% 20% 0%;
+}
+#doctor {
+    padding: 5px 15px 5px 15px;
+}
+#doctors {
+    text-align: center;
+    color: #0dd4bd;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+#trust {
+    padding-top: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 15px 5px 15px;
+}
+/***-----------------------------section 5*---------------------------------------------------------*/
+#improve {
+    font-family: 'Work Sans', sans-serif;
+    color: #0dd4bd;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+#more {
+    font-family: 'Roboto';
+    color: gray;
+    text-align: center;
+    font-size: 17px;
+    word-spacing: 2px;
+    padding-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+/*************************************gestion des images***********************************/
+.paysFotos {
+    display: flex;/* aligner les photos sur la même ligne*/
+    flex-wrap: wrap; /*éviter que les pays ne s'entreposent entr eux*/
+    justify-content: space-between;
+    padding: 15px 15% 15px 15%;
+    margin: 50px 0 50px 0;
+}
+.pays {
+    background-color: white;
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column; /*aligner les élements en vertical*/
+    justify-content: space-between;
+    margin-bottom: 20px; /*marge bas entre les pays */
+}
+/*.wasaw:hover {
+   border-color: #747474;
+   box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+   box-sizing: border-box;
+}*/
+#paysimg {
+    width: 309px;
+    height: 250px;
+    justify-content: center;
+}
+#paysp {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 10px;
+    letter-spacing: 2px;
+    color: grey;
+}
+#paysbutton {
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-weight: 900;
+    background: #3d83df;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    margin : -30px 10px 10px 60%;
+}
+ #interesting {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin: 0 15% 0 15%;
+    color: black;
+    font-size: 5rem;
+}
+.interestingButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 2% 0;
+}
+#interestingButton {
+    height: 40px;
+    color: white;
+    background-color: #4575b5;
+    border-radius: 5px;
+    border: none;
+}
+footer {
+    background-color: white;
+    justify-content: space-between;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+footer div h6 {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
